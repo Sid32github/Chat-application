@@ -1,0 +1,76 @@
+.chat-container {
+  height: 75vh;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.container.me {
+  flex-direction: row-reverse;
+}
+
+.chatbox {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 70%;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.me .chatbox {
+  background-color: #d1f7d1;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: red;
+  margin-left: 10px;
+  padding: 0;
+}
+
+
+.btm {
+  display: flex;
+  gap: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btm input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  max-width: 80%;
+  text-align: left; 
+}
+
+
+.btm input::placeholder {
+  text-align: center; 
+}
+
+.btm button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
